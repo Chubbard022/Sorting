@@ -11,6 +11,7 @@ That being said, please still use the 20 minute rule :slightly_smiling_face:
 
 # Part 1
 
+
 ## MVP Tasks
 
  - Open up the [iterative_sorting](src/iterative_sorting) directory
