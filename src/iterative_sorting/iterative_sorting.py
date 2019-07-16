@@ -6,10 +6,12 @@ def selection_sort( arr ):
         smallest_index = cur_index
         for next_index in range(i + 1,len(arr)):
             if arr[next_index] < arr[cur_index]:
+
                 smallest_index = next_index
                 temp = arr[cur_index]
                 arr[cur_index] = arr[smallest_index]
                 arr[smallest_index] = temp
+
     return arr
 
 
@@ -18,10 +20,12 @@ def bubble_sort( arr ):
     for i in range(0, len(arr)):
         cur_index = i
         for next_index in range(i + 1,len(arr)):
-            if arr[next_index] < arr[cur_index]:            
+            if arr[next_index] < arr[cur_index]:  
+
                 temp = arr[next_index]
                 arr[next_index] = arr[cur_index]
-                arr[cur_index] = temp               
+                arr[cur_index] = temp           
+                    
     return arr
 
 # STRETCH: implement the Count Sort function below
