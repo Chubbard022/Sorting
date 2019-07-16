@@ -4,27 +4,32 @@ def selection_sort( arr ):
     for i in range(0, len(arr) - 1):
         cur_index = i
         smallest_index = cur_index
-        # TO-DO: find next smallest element
-        # (hint, can do in 3 loc) 
-             
+        for next_index in range(i + 1,len(arr)):
+            if arr[next_index] < arr[cur_index]:
 
-
-
-        # TO-DO: swap
-
-
-
+                smallest_index = next_index
+                temp = arr[cur_index]
+                arr[cur_index] = arr[smallest_index]
+                arr[smallest_index] = temp
 
     return arr
 
 
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort( arr ):
+    for i in range(0, len(arr)):
+        cur_index = i
+        for next_index in range(i + 1,len(arr)):
+            if arr[next_index] < arr[cur_index]:  
 
+                temp = arr[next_index]
+                arr[next_index] = arr[cur_index]
+                arr[cur_index] = temp           
+                    
     return arr
-
 
 # STRETCH: implement the Count Sort function below
 def count_sort( arr, maximum=-1 ):
 
     return arr
+
